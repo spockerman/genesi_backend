@@ -1,0 +1,17 @@
+{
+ "type": "postgres",
+ "host": "localhost",
+ "port": "5432",
+ "username": "postgres",
+ "password": "docker",
+ "database": "allbarber",
+ "entities":[
+   "./src/modules/**/infra/typeorm/entities/*.ts"
+  ],
+ "migration":[
+   "./src/shared/infra/typeorm/migrations/*.ts"
+],
+"cli": {
+  "migrationsDir":"./src/shared/infra/typeorm/migrations"
+}
+}
